@@ -119,9 +119,9 @@ export class LinkedList<T> implements Iterable<T> {
     }
 
     //                 (*)
-    //  h              .|       t
+    //  h       .       |       t
     // (a) <-> (b) <-> (c) <-> (d)
-    // (a) <-> (b) <-> (*) <-> (c)
+    // (a) <-> (b) <-> (*) <-> (c) <-> (d)
     //
     public addAt(position: number, val: T): this {
         if (position <= 0) {
@@ -218,7 +218,7 @@ export class LinkedList<T> implements Iterable<T> {
     }
 
     //                  x
-    //  h               |       t
+    //  h              .|       t
     // (a) <-> (b) <-> (c) <-> (d)
     // (a) <-> (b) <-> (d)
     //
